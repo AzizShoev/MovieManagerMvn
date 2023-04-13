@@ -8,14 +8,14 @@ public class MovieManagerTest {
     MovieManager manager = new MovieManager();
 
     @Test
-    public void shouldFindAllEmpty() {  //add null movie
+    public void shouldFindAllEmpty() {  //find null movie
 
         String[] findAllExpected = {};
         Assertions.assertArrayEquals(findAllExpected, manager.findAll());
     }
 
     @Test
-    public void shouldFindLastEmpty() { //find null movie
+    public void shouldFindLastEmpty() { //find last null movie
 
         String[] findLastExpected = {};
         Assertions.assertArrayEquals(findLastExpected, manager.findLast());
